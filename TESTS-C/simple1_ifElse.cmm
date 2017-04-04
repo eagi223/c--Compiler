@@ -1,0 +1,24 @@
+// File: simple1-ifElse.cmm
+// Purpose: Test for if...else statement
+// Authors: provided by JWJ (2016)
+// Input: None
+// Expected output: 2015     
+
+int main ()
+{
+    int sum;
+    int i;
+    sum =  2014;
+    i = 1;
+    if (i < 2)
+    {
+	sum = sum + i;
+    }
+    else 
+    {
+	sum = 1000;
+    }
+    putn (sum);
+    return 0;
+}
+

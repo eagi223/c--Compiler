@@ -1,0 +1,45 @@
+//Factorial Calculator
+//Works until an overflow occurrs
+//Ethan Gibson
+
+//input: n for n!
+//output: result of n!
+
+int main() {
+
+	puts("FACTORIAL FINDER\n");
+	puts("----------------\n");
+	puts("\n");
+	puts("input n\n");
+	int n;
+	n = 0;
+	int cap;
+	int i;
+	i = 1;
+	n = getnum();
+	cap = n;
+
+	puts("\n");
+	puts("-----------------\n");
+	
+	if (n < i)
+	{
+		puts("No Factorial Exists\n");
+		return 1;
+	}
+	else 
+	{
+		puts("A factorial Does Exist\n");
+	}
+
+	for(i = 1; i < cap; i = i + 1 )
+	{	
+		n = n * i;
+		putn(n);
+	}
+	puts("\n");
+	puts("n = ");
+	putn(n);
+
+	return 0;
+}

@@ -1,0 +1,58 @@
+//  FIle: ifElseFor2.cmm
+//  Purpose: Tests all Milesone C Functionalities (except simple if-then)
+//  Authors: Provided by JWJ (2016)
+//  Input: n (simulated input from input() function)
+//         One is received as simulated input. In addition, allButOneIf1.cmm
+//         tests the 'if' portion of the if-else statment. allButOne2.cmm
+//         tests the 'else' portion of the if-else. The code for these programs
+//         are identical. The only change will be the simulated input value.
+//         Zero selects the sum of the first 100 integers any other integer
+//         selects the sum of the first 100 squares. A for loop is used to
+//         generate these sums.
+//  Expected output: 338350 (The sum of the first 100 square integers)
+
+int input() {
+  int rval;
+  rval = 1;
+
+  return rval;
+}
+
+int integerSum() {
+  int i;
+  int sum;
+  i = 1;
+  sum = 0;
+
+  for (i < 101; i = i + 1)
+    sum = sum + i;
+
+  return sum;
+}
+
+int squareSum() {
+  int i;
+  int sum;
+  i = 1;
+  sum = 0;
+  for ( i < 101; i = i + 1)
+    sum = sum + i*i;
+
+  return sum;
+}
+
+int main() {
+  int m;
+  int n;
+
+  m = input();
+  if (m < 1)
+    n = integerSum();
+  else
+    n = squareSum();
+
+  putn(n);
+
+  return 0;
+
+}

@@ -1,0 +1,502 @@
+Script started on Mon 12 Dec 2016 02:14:18 AM EST
+[4miris[24m:[1m~/CS441G/PAfinal/msB/msD[0m> ./ZZtests.sh
+[3;J[H[2J---                C-- Parser               ---
+-----written by Ethan Gibson for UK CS441G-----
+
+Building Project...
+
+47 rules accepted
+
+no change to file ./Absyn.H
+no change to file ./Absyn.C
+no change to file ./cmm.l
+no change to file ./cmm.y
+no change to file ./Parser.H
+no change to file ./Skeleton.H
+no change to file ./Skeleton.C
+no change to file ./Printer.H
+no change to file ./Printer.C
+no change to file ./Test.C
+no change to file ./Makefile
+make: Nothing to be done for 'all'.
+Build Successful
+
+----------------------------------------
+|            C--  Parser               |
+----------------------------------------
+
+The following user interface was created for ease of testing, grading, and viewing of source code
+
+[3;J[H[2J	==============================
+	HOME Menu
+	------------------------------
+	Select an option below
+	Enter NOT required
+
+	(1) VIEW MYREADME.txt
+	(2) VIEW Source Files
+	(3) TEST Compiler
+	(Q)uit
+	------------------------------
+3Testing Compiler
+[3;J[H[2J	=============================
+	TEST Parser Menu
+	-----------------------------
+	Select an option below then
+	press enter
+	
+	(1)  msCtest1.cmm
+	(2)  fib-input.cmm
+	(3)  ifElseFor1.cmm
+	(4)  ifElseFor2.cmm
+	(5)  simple1_for2.cmm
+	(6)  simple1_ifElse.cmm
+	(7)  simple2_ifElse.cmm
+        (8)  msDtest1.cmm 
+	(9)  msDtest2.cmm
+	(10) msDtest3.cmm
+	(11) ALL FILES
+	(Q)uit
+
+---Invalid Option---
+[3;J[H[2J	=============================
+	TEST Parser Menu
+	-----------------------------
+	Select an option below then
+	press enter
+	
+	(1)  msCtest1.cmm
+	(2)  fib-input.cmm
+	(3)  ifElseFor1.cmm
+	(4)  ifElseFor2.cmm
+	(5)  simple1_for2.cmm
+	(6)  simple1_ifElse.cmm
+	(7)  simple2_ifElse.cmm
+        (8)  msDtest1.cmm 
+	(9)  msDtest2.cmm
+	(10) msDtest3.cmm
+	(11) ALL FILES
+	(Q)uit
+11
+[3;J[H[2JTest ALL Files
+
+*************************
+     BEGIN TESTING
+*************************
+
+
+The file being tested is "./MYTESTS/msCtest1.cmm".
+*****************
+Parsing ./MYTESTS/msCtest1.cmm.
+
+
+*****************
+Compiling ./MYTESTS/msCtest1.cmm.
+
+Parse Succesful!
+
+*****************
+FACTORIAL FINDER
+----------------
+
+input n
+input-> 11
+
+-----------------
+A factorial Does Exist
+    11 
+    22 
+    66 
+   264 
+  1320 
+  7920 
+ 55440 
+443520 
+3991680 
+39916800 
+
+n = 39916800 
+
+
+The file being tested is "./TESTS-C/fib-input.cmm".
+*****************
+Parsing ./TESTS-C/fib-input.cmm.
+
+
+*****************
+Compiling ./TESTS-C/fib-input.cmm.
+
+Parse Succesful!
+
+*****************
+input n
+input-> 1000
+Fibonacci numbers
+Up to   1000 
+
+     1 
+     1 
+------
+     1 
+     2 
+     3 
+     5 
+     8 
+    13 
+    21 
+    34 
+    55 
+    89 
+   144 
+   233 
+   377 
+   610 
+   987 
+input n
+input-> 1
+
+
+The file being tested is "./TESTS-C/ifElseFor1.cmm".
+*****************
+Parsing ./TESTS-C/ifElseFor1.cmm.
+
+
+*****************
+Compiling ./TESTS-C/ifElseFor1.cmm.
+
+Parse Succesful!
+
+*****************
+  5050 
+
+
+The file being tested is "./TESTS-C/ifElseFor2.cmm".
+*****************
+Parsing ./TESTS-C/ifElseFor2.cmm.
+
+
+*****************
+Compiling ./TESTS-C/ifElseFor2.cmm.
+
+Parse Succesful!
+
+*****************
+338350 
+
+
+The file being tested is "./TESTS-C/simple1_for2.cmm".
+*****************
+Parsing ./TESTS-C/simple1_for2.cmm.
+
+
+*****************
+Compiling ./TESTS-C/simple1_for2.cmm.
+
+Parse Succesful!
+
+*****************
+  2015 
+  2016 
+  2017 
+  2018 
+  2019 
+
+
+The file being tested is "./TESTS-C/simple1_ifElse.cmm".
+*****************
+Parsing ./TESTS-C/simple1_ifElse.cmm.
+
+
+*****************
+Compiling ./TESTS-C/simple1_ifElse.cmm.
+
+Parse Succesful!
+
+*****************
+  2015 
+
+
+The file being tested is "./TESTS-C/simple2_ifElse.cmm".
+*****************
+Parsing ./TESTS-C/simple2_ifElse.cmm.
+
+
+*****************
+Compiling ./TESTS-C/simple2_ifElse.cmm.
+
+Parse Succesful!
+
+*****************
+  1000 
+
+
+The file being tested is "./MYTESTS/msDtest1.cmm".
+*****************
+Parsing ./MYTESTS/msDtest1.cmm.
+
+
+*****************
+Compiling ./MYTESTS/msDtest1.cmm.
+
+Parse Succesful!
+
+*****************
+A is not greater than BA is equal to One
+
+The file being tested is "./MYTESTS/msDtest2.cmm".
+*****************
+Parsing ./MYTESTS/msDtest2.cmm.
+
+
+*****************
+Compiling ./MYTESTS/msDtest2.cmm.
+
+Parse Succesful!
+
+*****************
+GUESS THE NUMBER GAME
+ --DON'T GO OVER--
+**BUT THE MORE TRIES YOU USE**
+**THE less POINTS YOU GET**
+
+Your Guess: input-> 5
+
+TOO LOW
+
+Your Guess: input-> 10
+
+TOO LOW
+
+Your Guess: input-> 45
+
+TOO LOW
+
+Your Guess: input-> 46
+
+TOO LOW
+
+Your Guess: input-> 47
+
+YOU WIN!!!
+-----------------
+|   SCOREBOARD   |
+-----------------
+YOU-    90 
+
+
+The file being tested is "./MYTESTS/msDtest3.cmm".
+*****************
+Parsing ./MYTESTS/msDtest3.cmm.
+
+
+*****************
+Compiling ./MYTESTS/msDtest3.cmm.
+
+Parse Succesful!
+
+*****************
+MULTIPLICATION TABLES
+=x=x=x=x=x=x=x=x=x=x=
+Type an int to get the table:
+Type 0 (zero) to quit
+input-> 3
+     3 
+x     0 
+=     0 
+
+     3 
+x     1 
+=     3 
+
+     3 
+x     2 
+=     6 
+
+     3 
+x     3 
+=     9 
+
+     3 
+x     4 
+=    12 
+
+     3 
+x     5 
+=    15 
+
+     3 
+x     6 
+=    18 
+
+     3 
+x     7 
+=    21 
+
+     3 
+x     8 
+=    24 
+
+     3 
+x     9 
+=    27 
+
+     3 
+x    10 
+=    30 
+
+     3 
+x    11 
+=    33 
+
+     3 
+x    12 
+=    36 
+
+Type an int to get the table:
+Type 0 (zero) to quit
+input-> 6
+     6 
+x     0 
+=     0 
+
+     6 
+x     1 
+=     6 
+
+     6 
+x     2 
+=    12 
+
+     6 
+x     3 
+=    18 
+
+     6 
+x     4 
+=    24 
+
+     6 
+x     5 
+=    30 
+
+     6 
+x     6 
+=    36 
+
+     6 
+x     7 
+=    42 
+
+     6 
+x     8 
+=    48 
+
+     6 
+x     9 
+=    54 
+
+     6 
+x    10 
+=    60 
+
+     6 
+x    11 
+=    66 
+
+     6 
+x    12 
+=    72 
+
+Type an int to get the table:
+Type 0 (zero) to quit
+input-> 0
+     0 
+x     0 
+=     0 
+
+     0 
+x     1 
+=     0 
+
+     0 
+x     2 
+=     0 
+
+     0 
+x     3 
+=     0 
+
+     0 
+x     4 
+=     0 
+
+     0 
+x     5 
+=     0 
+
+     0 
+x     6 
+=     0 
+
+     0 
+x     7 
+=     0 
+
+     0 
+x     8 
+=     0 
+
+     0 
+x     9 
+=     0 
+
+     0 
+x    10 
+=     0 
+
+     0 
+x    11 
+=     0 
+
+     0 
+x    12 
+=     0 
+
+
+
+***Press Any Key to Return to Test Menu***
+[3;J[H[2J	=============================
+	TEST Parser Menu
+	-----------------------------
+	Select an option below then
+	press enter
+	
+	(1)  msCtest1.cmm
+	(2)  fib-input.cmm
+	(3)  ifElseFor1.cmm
+	(4)  ifElseFor2.cmm
+	(5)  simple1_for2.cmm
+	(6)  simple1_ifElse.cmm
+	(7)  simple2_ifElse.cmm
+        (8)  msDtest1.cmm 
+	(9)  msDtest2.cmm
+	(10) msDtest3.cmm
+	(11) ALL FILES
+	(Q)uit
+q
+[3;J[H[2J	==============================
+	HOME Menu
+	------------------------------
+	Select an option below
+	Enter NOT required
+
+	(1) VIEW MYREADME.txt
+	(2) VIEW Source Files
+	(3) TEST Compiler
+	(Q)uit
+	------------------------------
+q[3;J[H[2J[4miris[24m:[1m~/CS441G/PAfinal/msB/msD[0m> 
+[4miris[24m:[1m~/CS441G/PAfinal/msB/msD[0m> exit
+exit
+
+Script done on Mon 12 Dec 2016 02:15:21 AM EST

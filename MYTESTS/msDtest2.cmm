@@ -1,0 +1,49 @@
+
+int main()
+{
+	puts("GUESS THE NUMBER GAME\n");
+	puts(" --DON'T GO OVER--\n");
+	puts("**BUT THE MORE TRIES YOU USE**\n");
+	puts("**THE less POINTS YOU GET**\n");
+	puts("\n");
+        int a;
+	int b;
+	b = 100;
+        a = 47;
+	int n;
+
+	do{
+		puts("Your Guess: ");
+		n = getnum();
+		puts("\n");
+		
+		if(n > a)
+		{
+			puts("TOO HIGH! YOU LOSE\n");
+			b = 0;
+			a = 47;	
+		}	
+		else
+		{
+			if(n == a)
+			{
+				puts("YOU WIN!!!\n");
+				b = b + 10;
+			}
+			else
+			{
+				puts("TOO LOW\n");
+				puts("\n");
+				b = b - 5;
+			}
+		}		
+	}while(n<a);
+
+	puts("-----------------\n");
+	puts("|   SCOREBOARD   |\n");
+	puts("-----------------\n");
+	puts("YOU-");
+	putn(b);
+
+	return 0;
+}

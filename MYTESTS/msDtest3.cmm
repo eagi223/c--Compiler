@@ -1,0 +1,34 @@
+int main()
+{
+
+	int x;
+	int i;
+	int n;
+	int p;
+
+	puts("MULTIPLICATION TABLES\n");
+	puts("=x=x=x=x=x=x=x=x=x=x=\n");
+
+	do{
+		puts("Type an int to get the table:\n");
+		puts("Type 0 (zero) to quit\n");
+		n = getnum();
+
+			for(i = 0; i < 13; i = i + 1)
+			{
+				p = n * i;
+				putn(n);
+				puts("x");
+				putn(i);
+				puts("=");
+				putn(p);
+				puts("\n");
+			}
+		
+	}
+	while(n > 0);
+
+}
+
+
+

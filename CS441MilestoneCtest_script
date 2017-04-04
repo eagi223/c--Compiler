@@ -1,0 +1,20 @@
+#!/bin/bash
+
+DIRECTORY=MYTESTS
+
+echo
+echo "The file being tested is \"$1\"."
+echo "*****************"
+echo "Parsing $1."
+echo
+#./$DIRECTORY/$1
+echo
+echo "*****************"
+echo "Compiling $1."
+./cmm2pstack $1  pa_test.apm
+echo
+echo "*****************"
+./pstack/api pa_test
+
+echo
+ 

@@ -1,0 +1,27 @@
+int main()
+{
+	int a;
+	int b;
+	int c;
+	int d;
+
+	a = 1;
+	b = 2;
+	c = 3;
+
+
+	if(a > b)
+	{
+		puts("WRONG");
+	}
+	else
+	{
+		puts("A is not greater than B");
+	}
+
+	if(a == 1){
+		puts("A is equal to One");
+	}
+
+	return 0;
+}

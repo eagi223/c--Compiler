@@ -1,0 +1,14 @@
+CS441 JWJ CS UK
+P-stack
+Fall 2015
+
+FILES
+README
+apd*  # ./pstack/apd  code > code.apd will disassemble code.apm
+api*  # ./pstack/api  code will execute code.apm
+      # ./pstack/api code -d will execute code.apm and will show the runtime stack (2 top frames)
+api.c # implemenation of the api emulator for reference 
+apm*  # assembler for P-code
+apm.h # header needed by pstcode.cc
+apname.h
+description.pdf #a list of opcodes and arguments for P-stack instructions; see also api.c

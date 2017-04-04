@@ -1,0 +1,58 @@
+CC = g++
+CCFLAGS = -g -W -Wall
+
+FLEX = flex
+FLEX_OPTS = -Pcmm
+
+BISON = bison
+BISON_OPTS = -t -pcmm
+
+OBJS = Absyn.o Lexer.o Parser.o codegen.o symbtable.o pstcode.o
+
+.PHONY: clean distclean pstack
+
+all: cmm2pstack pstack/api
+
+pstack/api: pstack/api.c
+	make -C pstack
+
+clean:
+	rm -f *.o cmm2pstack cmm.aux cmm.log cmm.pdf cmm.dvi cmm.ps cmm
+	make -C pstack clean
+
+distclean: clean
+	rm -f Absyn.C Absyn.H Test.C Parser.C Parser.H Lexer.C Skeleton.C Skeleton.H Printer.C Printer.H cmm.l cmm.y cmm.tex 
+
+cmm2pstack: ${OBJS} main.o
+	@echo "Linking compiler..."
+	${CC} ${CCFLAGS} -o $@ $^ 
+
+codegen.o: codegen.cc codegen.h symbtable.h pstack/apm.h
+	${CC} ${CCFLAGS} -c $<
+
+Absyn.o: Absyn.C Absyn.H
+	${CC} ${CCFLAGS} -c $<
+
+Lexer.C: cmm.l
+	${FLEX} -o$@ $<
+
+Parser.C: cmm.y
+	${BISON} -o$@ $<
+
+Lexer.o: Lexer.C Parser.H
+	${CC} ${CCFLAGS} -c $<
+
+Parser.o: Parser.C Absyn.H
+	${CC} ${CCFLAGS} -c $<
+
+main.o: main.cc Parser.H Absyn.H codegen.h
+	${CC} ${CCFLAGS} -c main.cc
+
+symbtable.o: symbtable.cc symbtable.h
+	${CC} ${CCFLAGS} -c symbtable.cc
+
+pstcode.o: pstcode.cc pstcode.h
+	${CC} ${CCFLAGS} -c pstcode.cc
+
+
+
